@@ -74,7 +74,8 @@ body {
   min-height: 200px;
   padding: 8px;
 
-  font-size: 8vw; /* 화면 너비 비율 기반 폰트 */
+  /* 화면 크기 따라 반응, 최소 24px 최대 40px */
+  font-size: clamp(24px, 8vw, 40px);
   line-height: 1.6;
   letter-spacing: 0;
   color: #1f7a4a;
@@ -175,4 +176,3 @@ function showLuck() {
 
 </body>
 </html>
-
